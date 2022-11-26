@@ -1,0 +1,26 @@
+import 'package:flutter/material.dart';
+
+const Color orange = Color.fromRGBO(255, 123, 28, 1);
+const Color black = Color.fromRGBO(0, 0, 0, 1);
+const Color white = Color.fromRGBO(255, 255, 255, 1);
+const Color yellow = Color.fromRGBO(255, 176, 28, 1);
+const Color bgcard = Color.fromRGBO(255, 243, 235, 1);
+const Color bluetext = Color.fromRGBO(20, 80, 106, 1);
+const Color bgblue = Color.fromRGBO(223, 248, 255, 1);
+const Color boxshadow = Color.fromRGBO(243, 243, 243, 1);
+const Color bgbrowntext = Color.fromRGBO(106, 54, 24, 1);
+const Color lightorange = Color.fromRGBO(255, 240, 211, 1);
+const Color profBluebg = Color.fromRGBO(242, 247, 251, 1);
+const Color profblueicon = Color.fromRGBO(49, 143, 184, 1);
+const Color profvoiletbg = Color.fromRGBO(239, 234, 255, 1);
+const Color profvoileticon = Color.fromRGBO(77, 59, 143, 1);
+const Color proforangebg = Color.fromRGBO(255, 245, 233, 1);
+const Color proforangeicon = Color.fromRGBO(222, 86, 68, 1);
+const Color profgreenbg = Color.fromRGBO(231, 244, 223, 1);
+const Color profgreenicon = Color.fromRGBO(75, 145, 100, 1);
+const Color profredbg = Color.fromRGBO(255, 224, 218, 1);
+const Color profredicon = Color.fromRGBO(221, 79, 59, 1);
+const Color profskybg = Color.fromRGBO(232, 240, 255, 1);
+const Color profskyicon = Color.fromRGBO(43, 45, 122, 1);
+const Color profyellowbg = Color.fromARGB(255, 250, 255, 232);
+const Color preofyellowicon = Color.fromARGB(255, 122, 107, 43);
