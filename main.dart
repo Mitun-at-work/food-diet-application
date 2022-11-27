@@ -6,6 +6,9 @@ import 'package:fooddiets/widgets/username.dart';
 import 'package:fooddiets/widgets/hydrationcontainer.dart';
 import 'package:fooddiets/widgets/detaileddiet.dart';
 import 'package:fooddiets/widgets/userdata.dart';
+import 'package:fooddiets/widgets/mentalhealthcontainer.dart';
+
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 void main() => runApp(
       MaterialApp(
@@ -22,26 +25,26 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: const Icon(
-            Icons.add,
-          ),
-        ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Colors.grey,
+          elevation: 1,
+          backgroundColor: white,
+          iconSize: 25,
           items: const [
             BottomNavigationBarItem(
               label: "Home",
-              icon: Icon(Icons.home),
+              icon: Icon(
+                Icons.home,
+              ),
             ),
             BottomNavigationBarItem(
               label: "Diet",
-              icon: Icon(Icons.food_bank),
+              icon: Icon(
+                Icons.food_bank,
+              ),
             ),
           ],
         ),
+        backgroundColor: Colors.white,
         body: Padding(
           padding: const EdgeInsets.symmetric(
             vertical: 8.0,
@@ -52,9 +55,6 @@ class HomeScreen extends StatelessWidget {
               children: <Widget>[
                 const TopBar(),
                 Container(
-                  margin: const EdgeInsets.symmetric(
-                    vertical: 5,
-                  ),
                   alignment: Alignment.topCenter,
                   child: Column(
                     children: [
@@ -64,30 +64,19 @@ class HomeScreen extends StatelessWidget {
                       ),
                       Container(
                         margin: const EdgeInsets.only(
-                          top: 30,
+                          top: 15,
                         ),
-                        child: Column(
-                          children: [
-                            Row(
-                              children: const [
-                                HydrationContainer(),
-                                DietPlan(),
-                              ],
-                            ),
-                            Container(
-                              margin: const EdgeInsets.symmetric(
-                                vertical: 20,
-                              ),
-                              child: Row(
-                                children: const [
-                                  DietPlan(),
-                                  UserDetails(),
-                                ],
-                              ),
-                            )
+                        child: StaggeredGrid.count(
+                          mainAxisSpacing: 20,
+                          crossAxisCount: 2,
+                          children: const [
+                            HydrationContainer(),
+                            DietPlan(),
+                            UserDetails(),
+                            MentalHealthContainer(),
                           ],
                         ),
-                      ),
+                      )
                     ],
                   ),
                 ),
