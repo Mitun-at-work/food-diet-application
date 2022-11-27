@@ -7,6 +7,23 @@ class HydrationContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return Hydration();
+  }
+}
+
+class Hydration extends StatefulWidget {
+  const Hydration({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  State<Hydration> createState() => _HydrationState();
+}
+
+class _HydrationState extends State<Hydration> {
+  String a = "";
+  @override
+  Widget build(BuildContext context) {
     return Container(
       color: bgblue,
       height: 250,
@@ -42,9 +59,9 @@ class HydrationContainer extends StatelessWidget {
               child: CircularPercentIndicator(
                 radius: 60.0,
                 animation: true,
-                animationDuration: 1500,
-                lineWidth: 4.0,
-                percent: .1,
+                animationDuration: 2000,
+                lineWidth: 5.0,
+                percent: .01,
                 center: const Text(
                   "2 Litres",
                   style: TextStyle(
@@ -55,15 +72,15 @@ class HydrationContainer extends StatelessWidget {
                 ),
                 circularStrokeCap: CircularStrokeCap.butt,
                 backgroundColor: const Color.fromRGBO(
-                  31,
-                  91,
-                  113,
-                  1,
-                ),
-                progressColor: const Color.fromRGBO(
                   194,
                   216,
                   237,
+                  1,
+                ),
+                progressColor: const Color.fromRGBO(
+                  31,
+                  91,
+                  113,
                   1,
                 ),
               ),
@@ -72,9 +89,9 @@ class HydrationContainer extends StatelessWidget {
               margin: const EdgeInsets.only(
                 top: 10,
               ),
-              child: const Text(
-                "You are good",
-                style: TextStyle(
+              child: Text(
+                a,
+                style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Color.fromRGBO(
                     31,
