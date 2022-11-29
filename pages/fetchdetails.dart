@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fooddiets/globals/globals.dart';
 
+// ignore: must_be_immutable
 class FetchDetails extends StatelessWidget {
   String field;
   // ignore: prefer_typing_uninitialized_variables

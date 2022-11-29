@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fooddiets/globals/globals.dart' as globals;
-import 'package:fooddiets/globals/theme.dart' as theme;
 
 // ignore: must_be_immutable
 class Otp extends StatelessWidget {
@@ -14,13 +13,15 @@ class Otp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
-      width: 60,
-      color: theme.bgcard,
+      height: 65,
+      width: 65,
+      decoration: BoxDecoration(
+        border: Border.all(
+          color: Colors.black38,
+        ),
+        shape: BoxShape.circle,
+      ),
       child: TextFormField(
-        onFieldSubmitted: (value) {
-          globals.otp.add(value);
-        },
         onChanged: (value) {
           int index = this.index;
           globals.passkey[index] = value;

@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fooddiets/pages/profilescreen.dart';
-
-import '../globals/theme.dart';
+import 'package:fooddiets/pages/fetchdetails.dart';
+import 'package:fooddiets/globals/theme.dart';
 
 class TopBar extends StatelessWidget {
   const TopBar({
@@ -16,14 +16,21 @@ class TopBar extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ProfileScreen(),
+            builder: (context) => FetchDetails(
+              bgcolor: black,
+              textcolor: white,
+              field: "Age",
+              nextpage: null,
+            ),
           ),
         );
       },
       child: Container(
-        margin: const EdgeInsets.symmetric(
-          vertical: 35,
-          horizontal: 13,
+        margin: const EdgeInsets.only(
+          top: 35,
+          left: 13,
+          right: 13,
+          bottom: 15,
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

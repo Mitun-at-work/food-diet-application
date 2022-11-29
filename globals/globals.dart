@@ -12,6 +12,8 @@ var name,
     ishealthy,
     requiredCalories,
     isUser,
+    target,
+    progress,
     healthStatus;
 
 List<bool> isEntered = [

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fooddiets/globals/theme.dart';
+import 'package:fooddiets/pages/password.dart';
 
 class DietPlan extends StatelessWidget {
   const DietPlan({
@@ -27,11 +28,17 @@ class DietPlan extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               const Icon(
-                CupertinoIcons.wrench_fill,
+                Icons.key,
                 color: orange,
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SetOtp(),
+                      ));
+                },
                 icon: const Icon(
                   CupertinoIcons.right_chevron,
                   size: 15,
@@ -39,20 +46,17 @@ class DietPlan extends StatelessWidget {
               )
             ],
           ),
-          Column(
-            children: <Widget>[
-              Container(
-                margin: const EdgeInsets.only(
-                  top: 10,
-                ),
-                child: const Text(
-                  "View Detailed plan",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
+          Container(
+            margin: const EdgeInsets.only(
+              top: 10,
+            ),
+            child: const Text(
+              "Diet Composition",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
               ),
-            ],
+            ),
           )
         ],
       ),

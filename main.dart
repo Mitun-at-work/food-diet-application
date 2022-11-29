@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:fooddiets/globals/theme.dart';
 import 'package:fooddiets/widgets/appbar.dart';
 import 'package:fooddiets/widgets/greetuser.dart';
 import 'package:fooddiets/widgets/username.dart';
 import 'package:fooddiets/widgets/hydrationcontainer.dart';
 import 'package:fooddiets/widgets/detaileddiet.dart';
-import 'package:fooddiets/widgets/userdata.dart';
+import 'package:fooddiets/widgets/healthdata.dart';
 import 'package:fooddiets/widgets/mentalhealthcontainer.dart';
-
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 void main() => runApp(
       MaterialApp(
@@ -19,7 +18,9 @@ void main() => runApp(
     );
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +73,7 @@ class HomeScreen extends StatelessWidget {
                           children: const [
                             HydrationContainer(),
                             DietPlan(),
-                            UserDetails(),
+                            HealthData(),
                             MentalHealthContainer(),
                           ],
                         ),

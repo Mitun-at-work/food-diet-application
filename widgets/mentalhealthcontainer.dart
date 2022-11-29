@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fooddiets/globals/theme.dart';
 
 class MentalHealthContainer extends StatelessWidget {
   const MentalHealthContainer({
@@ -48,25 +46,25 @@ class MentalHealthContainer extends StatelessWidget {
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: const [
-                Text(
+              children: [
+                const Text(
                   "😍",
                   style: TextStyle(
                     fontSize: 18,
                   ),
                 ),
-                Text(
-                  "😐",
-                  style: TextStyle(
-                    fontSize: 18,
+                Container(
+                  decoration: const BoxDecoration(
+                    color: Colors.black12,
+                    shape: BoxShape.circle,
                   ),
-                ),
-                Text(
-                  "😠",
-                  style: TextStyle(
-                    fontSize: 18,
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.arrow_right_alt,
+                    ),
                   ),
-                ),
+                )
               ],
             ),
           )
