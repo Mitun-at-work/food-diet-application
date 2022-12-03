@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:fooddiets/globals/theme.dart';
 
+// ignore: must_be_immutable
 class HealthDataCard extends StatelessWidget {
-  const HealthDataCard({
+  String val;
+  String suffix;
+  HealthDataCard({
     super.key,
+    required this.val,
+    required this.suffix,
   });
 
   @override
@@ -18,17 +23,17 @@ class HealthDataCard extends StatelessWidget {
             margin: const EdgeInsets.only(
               right: 10,
             ),
-            child: const Text(
-              "193",
-              style: TextStyle(
+            child: Text(
+              val,
+              style: const TextStyle(
                 color: bgbrowntext,
                 fontSize: 25,
               ),
             ),
           ),
-          const Text(
-            "cm",
-            style: TextStyle(
+          Text(
+            suffix,
+            style: const TextStyle(
               color: Colors.black54,
               fontSize: 15,
             ),

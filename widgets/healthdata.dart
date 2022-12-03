@@ -14,7 +14,7 @@ class HealthData extends StatelessWidget {
         left: 10,
       ),
       padding: const EdgeInsets.symmetric(
-        vertical: 25,
+        vertical: 14,
         horizontal: 20,
       ),
       color: lightorange,
@@ -38,9 +38,22 @@ class HealthData extends StatelessWidget {
             ],
           ),
 
-          const HealthDataCard(),
-          const HealthDataCard(),
-          const HealthDataCard(),
+          HealthDataCard(
+            suffix: "cm",
+            val: "193",
+          ),
+          HealthDataCard(
+            suffix: "kg",
+            val: "55",
+          ),
+          HealthDataCard(
+            suffix: "Age",
+            val: "19",
+          ),
+          HealthDataCard(
+            suffix: "BMI",
+            val: "8",
+          ),
 
           // Main Widget
         ],
