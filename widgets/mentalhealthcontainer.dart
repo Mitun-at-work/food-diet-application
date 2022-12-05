@@ -48,18 +48,20 @@ class MentalHealthContainer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 const Text(
-                  "😍",
+                  "💫",
                   style: TextStyle(
                     fontSize: 18,
                   ),
                 ),
                 Container(
-                  decoration: const BoxDecoration(
-                    color: Colors.black12,
+                  decoration: BoxDecoration(
+                    color: Colors.grey[100],
                     shape: BoxShape.circle,
                   ),
                   child: IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      //
+                    },
                     icon: const Icon(
                       Icons.arrow_right_alt,
                     ),

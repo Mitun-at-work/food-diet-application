@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fooddiets/pages/profilescreen.dart';
-import 'package:fooddiets/pages/fetchdetails.dart';
 import 'package:fooddiets/globals/theme.dart';
+import 'package:fooddiets/pages/mentalhealthCard.dart';
 
 class TopBar extends StatelessWidget {
   const TopBar({
@@ -15,14 +14,7 @@ class TopBar extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(
-            builder: (context) => FetchDetails(
-              bgcolor: black,
-              textcolor: white,
-              field: "Age",
-              nextpage: null,
-            ),
-          ),
+          MaterialPageRoute(builder: (context) => const MentalHealth()),
         );
       },
       child: Container(

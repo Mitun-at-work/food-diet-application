@@ -34,10 +34,11 @@ class DietPlan extends StatelessWidget {
               IconButton(
                 onPressed: () {
                   Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const SetOtp(),
-                      ));
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const SetOtp(),
+                    ),
+                  );
                 },
                 icon: const Icon(
                   CupertinoIcons.right_chevron,

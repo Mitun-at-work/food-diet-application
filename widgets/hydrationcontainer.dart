@@ -37,7 +37,6 @@ class _HydrationState extends State<Hydration> {
               progress = target;
               sentence = "Goals Achieved";
             }
-
             if (progress == 1000) {
               sentence = "Quite Good";
             } else if (progress == 1500) {
@@ -83,9 +82,9 @@ class _HydrationState extends State<Hydration> {
                   animationDuration: 2000,
                   lineWidth: 5.0,
                   percent: progress / target,
-                  center: const Text(
-                    "2 Litres",
-                    style: TextStyle(
+                  center: Text(
+                    "${progress / 1000} Litres",
+                    style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       color: bluetext,
                       fontSize: 20.0,

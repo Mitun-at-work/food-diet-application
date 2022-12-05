@@ -37,6 +37,10 @@ List<String> otp = [
   "2",
 ];
 
+var mentalbg;
+
+bool mentalRecorded = false;
+
 const foodDiet = {
   "Sunday": [
     [

@@ -20,22 +20,16 @@ class HealthData extends StatelessWidget {
       color: lightorange,
       child: Column(
         children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const <Widget>[
-              Text(
-                "BMI",
-                style: TextStyle(
-                  color: bgbrowntext,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18,
-                ),
-              ),
-              Icon(
-                Icons.ac_unit_sharp,
+          Container(
+            alignment: Alignment.topLeft,
+            child: const Text(
+              "Mass Index ❤️‍🩹",
+              style: TextStyle(
                 color: bgbrowntext,
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
               ),
-            ],
+            ),
           ),
 
           HealthDataCard(
