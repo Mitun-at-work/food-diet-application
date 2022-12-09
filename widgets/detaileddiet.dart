@@ -28,7 +28,7 @@ class DietPlan extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               const Icon(
-                Icons.key,
+                Icons.spa,
                 color: orange,
               ),
               IconButton(

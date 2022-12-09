@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fooddiets/pages/mentalhealthCard.dart';
 
 class MentalHealthContainer extends StatelessWidget {
   const MentalHealthContainer({
@@ -61,6 +62,10 @@ class MentalHealthContainer extends StatelessWidget {
                   child: IconButton(
                     onPressed: () {
                       //
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const MentalHealth()));
                     },
                     icon: const Icon(
                       Icons.arrow_right_alt,

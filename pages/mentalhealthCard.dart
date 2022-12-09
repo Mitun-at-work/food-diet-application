@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 import 'package:flutter/material.dart';
 import 'package:fooddiets/widgets/emojiContainer.dart';
 
@@ -55,16 +56,17 @@ class MentalHealth extends StatelessWidget {
               margin: const EdgeInsets.only(
                 top: 50,
               ),
-              child: TextButton(
-                onPressed: () {
-                  //
-                },
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  elevation: 2,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.grey[200],
+              ),
+              child: Container(
+                padding: const EdgeInsets.all(
+                  12,
                 ),
-                child: const Text(
-                  "Record Response",
+                child: const Icon(
+                  Icons.done,
+                  color: Colors.blue,
                 ),
               ),
             ),
@@ -74,3 +76,14 @@ class MentalHealth extends StatelessWidget {
     );
   }
 }
+
+
+//  ScaffoldMessenger.of(context).showSnackBar(
+//                     const SnackBar(
+//                       duration: Duration(
+//                         seconds: 1,
+//                       ),
+//                       content: Text(
+//                         "Response Recorded",
+//                       ),
+//                     ),

@@ -23,7 +23,7 @@ class HealthData extends StatelessWidget {
           Container(
             alignment: Alignment.topLeft,
             child: const Text(
-              "Mass Index ❤️‍🩹",
+              "Mass Index",
               style: TextStyle(
                 color: bgbrowntext,
                 fontWeight: FontWeight.bold,

@@ -15,7 +15,7 @@ class EmojiContainer extends StatefulWidget {
 }
 
 class _EmojiContainerState extends State<EmojiContainer> {
-  var bg = Colors.grey[100];
+  var bg = Colors.grey[200];
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -24,13 +24,13 @@ class _EmojiContainerState extends State<EmojiContainer> {
           () {
             if (1 == 1) {
               if (widget.index == 1) {
-                bg = Colors.green[200];
+                bg = Colors.green;
               } else if (widget.index == 2) {
-                bg = Colors.blue[200];
+                bg = Colors.blue;
               } else if (widget.index == 3) {
-                bg = Colors.yellow[200];
+                bg = Colors.yellow;
               } else if (widget.index == 4) {
-                bg = Colors.purple[200];
+                bg = Colors.purple;
               }
             }
           },

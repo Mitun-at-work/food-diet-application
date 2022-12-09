@@ -21,7 +21,7 @@ class Hydration extends StatefulWidget {
 }
 
 class _HydrationState extends State<Hydration> {
-  String sentence = "Not Bad";
+  String sentence = "Hydrate frequently";
   int target = 2000;
   int progress = 0;
 
@@ -38,7 +38,7 @@ class _HydrationState extends State<Hydration> {
               sentence = "Goals Achieved";
             }
             if (progress == 1000) {
-              sentence = "Quite Good";
+              sentence = "Quite Good 💖";
             } else if (progress == 1500) {
               sentence = "Almost There";
             }
