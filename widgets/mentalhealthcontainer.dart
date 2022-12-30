@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fooddiets/pages/mentalhealthCard.dart';
+import 'package:fooddiets/pages/alarm_page.dart';
 
 class MentalHealthContainer extends StatelessWidget {
   const MentalHealthContainer({
@@ -65,7 +65,7 @@ class MentalHealthContainer extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const MentalHealth()));
+                              builder: (context) => const AlarmPage()));
                     },
                     icon: const Icon(
                       Icons.arrow_right_alt,

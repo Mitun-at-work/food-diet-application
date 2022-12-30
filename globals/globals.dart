@@ -13,7 +13,6 @@ var name,
     requiredCalories,
     isUser,
     target,
-    progress,
     healthStatus;
 
 List<bool> isEntered = [
@@ -40,6 +39,10 @@ List<String> otp = [
 var mentalbg;
 
 bool mentalRecorded = false;
+
+int hydrationTarget = 2000;
+
+double hydrationProgress = 0;
 
 const foodDiet = {
   "Sunday": [

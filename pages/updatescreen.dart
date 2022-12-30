@@ -20,6 +20,7 @@ class UpdateDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     int inputlimit = 2;
+
     if (field == "Height") {
       inputlimit += 1;
     }

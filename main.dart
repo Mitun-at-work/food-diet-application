@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:fooddiets/globals/theme.dart';
 import 'package:fooddiets/widgets/appbar.dart';
 import 'package:fooddiets/widgets/greetuser.dart';
 import 'package:fooddiets/widgets/username.dart';
 import 'package:fooddiets/widgets/hydrationcontainer.dart';
-import 'package:fooddiets/widgets/detaileddiet.dart';
+import 'package:fooddiets/widgets/detailed_diet_card.dart';
 import 'package:fooddiets/widgets/healthdata.dart';
 import 'package:fooddiets/widgets/mentalhealthcontainer.dart';
+
+// var fetch = ShareP().getInstance();
 
 void main() => runApp(
       MaterialApp(
@@ -28,19 +29,32 @@ class HomeScreen extends StatelessWidget {
       child: Scaffold(
         bottomNavigationBar: BottomNavigationBar(
           elevation: 1,
-          backgroundColor: white,
+          selectedItemColor: Colors.black,
+          unselectedItemColor: Colors.grey,
           iconSize: 25,
           items: const [
             BottomNavigationBarItem(
-              label: "Home",
+              label: "",
               icon: Icon(
                 Icons.home,
               ),
             ),
             BottomNavigationBarItem(
-              label: "Diet",
+              label: "",
               icon: Icon(
-                Icons.food_bank,
+                Icons.cake_sharp,
+              ),
+            ),
+            BottomNavigationBarItem(
+              label: "",
+              icon: Icon(
+                Icons.water_drop_outlined,
+              ),
+            ),
+            BottomNavigationBarItem(
+              label: "",
+              icon: Icon(
+                Icons.trending_up_outlined,
               ),
             ),
           ],

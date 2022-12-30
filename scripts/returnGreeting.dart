@@ -13,6 +13,4 @@ String returnGreeting() {
   } else {
     return "Night";
   }
-
-  return "Day";
 }

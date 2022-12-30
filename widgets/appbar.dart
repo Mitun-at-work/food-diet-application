@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fooddiets/globals/theme.dart';
-import 'package:fooddiets/pages/mentalhealthCard.dart';
+import 'package:fooddiets/pages/diet_page.dart';
 
 class TopBar extends StatelessWidget {
   const TopBar({

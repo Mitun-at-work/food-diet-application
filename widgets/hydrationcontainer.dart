@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fooddiets/globals/globals.dart';
 import 'package:fooddiets/globals/theme.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
@@ -22,24 +23,21 @@ class Hydration extends StatefulWidget {
 
 class _HydrationState extends State<Hydration> {
   String sentence = "Hydrate frequently";
-  int target = 2000;
-  int progress = 0;
-
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
         setState(
           () {
-            if (progress + 500 < target) {
-              progress += 500;
+            if (hydrationProgress + 500 < target) {
+              hydrationProgress += 500;
             } else {
-              progress = target;
+              hydrationProgress = target;
               sentence = "Goals Achieved";
             }
-            if (progress == 1000) {
+            if (hydrationProgress == 1000) {
               sentence = "Quite Good 💖";
-            } else if (progress == 1500) {
+            } else if (hydrationProgress == 1500) {
               sentence = "Almost There";
             }
           },
@@ -81,9 +79,9 @@ class _HydrationState extends State<Hydration> {
                   animation: true,
                   animationDuration: 2000,
                   lineWidth: 5.0,
-                  percent: progress / target,
+                  percent: hydrationProgress / hydrationTarget,
                   center: Text(
-                    "${progress / 1000} Litres",
+                    "${hydrationTarget / 1000} Litres",
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       color: bluetext,
